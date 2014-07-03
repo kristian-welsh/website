@@ -1,0 +1,13 @@
+div#container {
+  width: 800px;
+  height: 100%;
+  margin: auto;
+  background-color: #eee;
+}
+div#nav {
+  width: 600px;
+  margin: auto;
+}
+iframe {
+  width: 100%;
+}

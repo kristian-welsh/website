@@ -5,16 +5,32 @@ div#container {
   background-color: #eee;
 }
 div#headings {
-  padding: 20px;
-  margin-left: 20px;
+  background: #ddd;
+}
+div#title {
+  padding: 10px;
+  padding-left: 40px;
+  background: #888;
 }
 div#nav {
   width: 600px;
+  height: 75px;
   margin: auto;
 }
 iframe {
   width: 100%;
+  border: none;
 }
-h1, h2, p {
+h1, h2 {
+  color: #ddd;
+  font-family: Georgia, Serif;
+}
+p, a {
+  font-family: Verdana;
+}
+p {
+  padding: 10px;
+  padding-left: 40px;
   color: #555;
+  width: 720px;
 }

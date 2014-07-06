@@ -25,12 +25,8 @@ iframe {
   width: 100%;
   border: none;
 }
-h1, h2 {
+div#title {
   color: #ddd;
-  font-family: Georgia, Serif;
-}
-p, a {
-  font-family: Verdana;
 }
 p {
   color: #555;

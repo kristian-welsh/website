@@ -1,44 +1,44 @@
-# 1st arg: Name of game
-# 2nd arg: Description of the game
-# 3rd arg: Width of swf
-# 4th arg: Height of swf
+# 1st arg: Name
+# 2nd arg: Description
+# 3rd arg: Width
+# 4th arg: Height
 
 @name = ARGV[0]
 @description = ARGV[1]
 @width = ARGV[2]
 @height = ARGV[3]
 
+def destination_file
+  "site\\games\\#{internal_name}.html"
+end
+
+def remove_past_page
+  if File.exists? destination_file then
+    File.delete destination_file
+  end
+end
+
 def create
-  file = File.new("site\\games\\#{internal_name}.html", "w")
-  file.puts "<html>"
-  file.puts "  <head>"
-  file.puts "    <title>Kristian Welsh - #{@name}</title>"
-  file.puts "    <link rel=\"stylesheet\" type=\"text/css\" href=\"..\\base.css\"></link>"
-  file.puts "  </head>"
-  file.puts "  <body>"
-  file.puts "    <div id=\"container\">"
-  file.puts "      <div id=\"headings\">"
-  file.puts "        <div id=\"title\">"
-  file.puts "          <h1>Kristian Welsh</h1>"
-  file.puts "          <h2>Games</h2>"
-  file.puts "        </div>"
-  file.puts "        <div id=\"nav\">"
-  file.puts "          <iframe src=\"..\\navbar.html\" frameborder=\"0\"></iframe>"
-  file.puts "        </div>"
-  file.puts "      </div>"
-  file.puts "      <div id=\"rest\">"
-  file.puts "        <h3>#{@name}</h3>"
-  file.puts "        <embed src=\"#{internal_name}.swf\" width=\"#{@width}px\" height=\"#{@height}px\"></embed>"
-  file.puts "        <p>#{@description}</p>"
-  file.puts "      </div>"
-  file.puts "    </div>"
-  file.puts "  </body>"
-  file.puts "</html>"
-  file.close
+  File.open "game_template.html", "rb" do |source|
+    File.open destination_file, "w" do |destination|
+      destination.puts(replace_hooks(source.read()))
+    end
+  end
 end
 
 def internal_name
   @name.downcase.gsub " ", "_"
 end
 
+def replace_hooks input
+  output = input
+  output = output.gsub /%name%/, @name
+  output = output.gsub /%internal_name%/, internal_name
+  output = output.gsub /%description%/, @description
+  output = output.gsub /%width%/, @width
+  output = output.gsub /%height%/, @height
+  output
+end
+
+remove_past_page
 create

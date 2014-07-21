@@ -3,41 +3,43 @@
 # 3rd arg: Width
 # 4th arg: Height
 
-@name = ARGV[0]
+@name = ARGV[0] 
+@internal_name = @name.downcase.gsub " ", "_"
 @description = ARGV[1]
 @width = ARGV[2]
 @height = ARGV[3]
 
-def destination_file
-  "site\\games\\#{internal_name}.html"
-end
+@destination_file = "site\\games\\#{@internal_name}.html"
+
+@keywords = [
+  [/%name%/, @name],
+  [/%internal_name%/, @internal_name],
+  [/%description%/, @description],
+  [/%width%/, @width],
+  [/%height%/, @height]
+]
+
 
 def remove_past_page
-  if File.exists? destination_file then
-    File.delete destination_file
-  end
+	if File.exists? @destination_file then
+		File.delete @destination_file
+	end
 end
 
 def create
-  File.open "game_template.html", "rb" do |source|
-    File.open destination_file, "w" do |destination|
-      destination.puts(replace_hooks(source.read()))
-    end
+	File.open "game_template.html", "rb" do |source|
+		File.open @destination_file, "w" do |destination|
+			destination.puts replace_keywords source.read
+		end
+	end
+end
+
+def replace_keywords input
+	output = input
+  @keywords.each do |keyword_pair|
+    output = output.gsub keyword_pair[0], keyword_pair[1]
   end
-end
-
-def internal_name
-  @name.downcase.gsub " ", "_"
-end
-
-def replace_hooks input
-  output = input
-  output = output.gsub /%name%/, @name
-  output = output.gsub /%internal_name%/, internal_name
-  output = output.gsub /%description%/, @description
-  output = output.gsub /%width%/, @width
-  output = output.gsub /%height%/, @height
-  output
+	output
 end
 
 remove_past_page

@@ -1,0 +1,17 @@
+@import url("../font.css");
+@import url("../base.css");
+
+li#foo {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+}
+ul {
+  list-style: none;
+}
+li#foo p {
+  width: 100%;
+}
+div#contents {
+  margin: 20px;
+}

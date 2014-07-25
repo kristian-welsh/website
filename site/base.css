@@ -1,0 +1,42 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#container {
+  width: 900px;
+  height: 100%;
+  margin: auto;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-color: #eee;
+}
+#headings {
+  background: #ddd;
+}
+#title {
+  padding: 10px;
+  padding-left: 40px;
+  background: #888;
+  color: #ddd;
+}
+#nav {
+  width: 600px;
+  height: 75px;
+  margin: auto;
+}
+#rest {
+	padding: 10px;
+	padding-left: 30px;
+  background-color: #eee;
+}
+iframe {
+  width: 100%;
+  border: none;
+}
+p {
+  color: #555;
+  width: 720px;
+}

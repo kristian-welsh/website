@@ -18,6 +18,12 @@ a {
   
   background: #ddd;
 }
+a:hover {
+  background: #AEBD9D;
+}
+a:hover {
+  color: #fff;
+}
 h3, p {
   margin-left: 10;
   width: 90%;

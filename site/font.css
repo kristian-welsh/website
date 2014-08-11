@@ -4,10 +4,13 @@ h1, h2, h3 {
 p {
   font-family: Verdana;
 }
-#rest h3 {
-  color: #999;
-}
 a {
   color: #999;
   text-decoration: none;
+}
+h1 {
+  color: #99AF78;
+}
+h2 {
+  color: #AEBD9D;
 }

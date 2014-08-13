@@ -1,20 +1,29 @@
-@import url("../font.css");
-@import url("../base.css");
+@import url("../index.css");
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-ul li {
+li {
   display: inline;
 }
-ul li a {
+a {
   width: 30%;
-  height: 200px;
+  height: 250px;
   
   float: left;
   margin: 10px;
   
   background: #ddd;
+}
+a:hover {
+  background: #AEBD9D;
+}
+a:hover {
+  color: #fff;
+}
+h3, p {
+  margin-left: 10;
+  width: 90%;
 }

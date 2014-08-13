@@ -1,2 +1,14 @@
 @import url("font.css");
 @import url("base.css");
+
+#centered {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#centered_rest {
+	padding: 10px;
+  background-color: #eee;
+  overflow: auto;
+}

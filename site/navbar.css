@@ -17,9 +17,10 @@ ul li a {
   text-align: center;
 
   color: #999;
-  background: #ddd;
+  background: #eee;
   border: 1px solid #fff;
 }
 ul li a:hover {
-  background: #ccc;
+  background: #AEBD9D;
+  color: #eee;
 }

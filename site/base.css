@@ -14,10 +14,10 @@ body {
 	background-color: #eee;
 }
 #headings {
-  background: #ddd;
+  background: #CCD3C7;
 }
 #title {
-  padding: 10px;
+  padding: 1px;
   padding-left: 40px;
   background: #888;
   color: #ddd;
@@ -31,6 +31,7 @@ body {
 	padding: 10px;
 	padding-left: 30px;
   background-color: #eee;
+  overflow: auto;
 }
 iframe {
   width: 100%;
@@ -39,4 +40,11 @@ iframe {
 p {
   color: #555;
   width: 720px;
+}
+
+h1 {
+  color: #99AF78;
+}
+h2 {
+  color: #AEBD9D;
 }

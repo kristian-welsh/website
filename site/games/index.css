@@ -1,5 +1,4 @@
-@import url("../font.css");
-@import url("../base.css");
+@import url("../index.css");
 
 ul {
   margin: 0;
@@ -27,9 +26,4 @@ a:hover {
 h3, p {
   margin-left: 10;
   width: 90%;
-}
-img#centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }

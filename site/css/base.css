@@ -1,3 +1,5 @@
+@import url("base-color.css");
+
 body {
   padding: 0;
   margin: 0;
@@ -11,18 +13,12 @@ body {
   left: 0;
   right: 0;
   position: absolute;
-  background-color: #eee;
-}
-#headings {
-  background: #CCD3C7;
 }
 #title {
   padding: 1px;
   padding-left: 40px;
-  background: #888;
-  color: #ddd;
 }
-#nav {
+div #nav {
   width: 400px;
   height: 75px;
   margin: auto;
@@ -30,7 +26,6 @@ body {
 #rest {
   padding: 10px;
   padding-left: 30px;
-  background-color: #eee;
   overflow: auto;
 }
 iframe {
@@ -38,13 +33,5 @@ iframe {
   border: none;
 }
 p {
-  color: #555;
   width: 720px;
-}
-
-h1 {
-  color: #99AF78;
-}
-h2 {
-  color: #AEBD9D;
 }

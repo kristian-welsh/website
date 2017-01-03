@@ -1,0 +1,25 @@
+h1 {
+  color: #99AF78;
+}
+h2 {
+  color: #AEBD9D;
+}
+p {
+  color: #555;
+}
+#rest {
+  background-color: #eee;
+}
+#title {
+  background: #888;
+  color: #ddd;
+}
+#headings {
+  background: #CCD3C7;
+}
+#container {
+  background-color: #eee;
+}
+#centered_rest {
+  background-color: #eee;
+}

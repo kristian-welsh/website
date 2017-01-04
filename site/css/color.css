@@ -1,20 +1,20 @@
-a { 
-  background: #ddd;
-}
-a:hover {
-  background: #AEBD9D;
-}
-a:hover {
-  color: #fff;
-}
 ul.nav li a {
-  color: #999;
   background: #eee;
   border-color: #fff;
 }
 ul.nav li a:hover {
   background: #AEBD9D;
   color: #eee;
+}
+#title {
+  background: #888;
+  color: #ddd;
+}
+#headings {
+  background: #CCD3C7;
+}
+#container, #centered_rest, #rest {
+  background: #eee;
 }
 h1 {
   color: #99AF78;
@@ -25,28 +25,11 @@ h2 {
 p {
   color: #555;
 }
-#rest {
-  background-color: #eee;
-}
-#title {
-  background: #888;
-  color: #ddd;
-}
-#headings {
-  background: #CCD3C7;
-}
-#container {
-  background-color: #eee;
-}
-#centered_rest {
-  background-color: #eee;
-}
 a {
+  background: #ddd;
   color: #999;
 }
-h1 {
-  color: #99AF78;
-}
-h2 {
-  color: #AEBD9D;
+a:hover {
+  background: #AEBD9D;
+  color: #fff;
 }

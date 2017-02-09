@@ -1,7 +1,5 @@
-@import url("color.css");
-
-h1, h2, h3 {
-  font-family: Georgia, Serif;
+h1, h2, h3, h4 {
+  font-family:Helvetica,Arial,sans-serif;
 }
 p {
   font-family: Verdana;

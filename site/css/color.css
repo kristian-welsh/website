@@ -1,35 +1,45 @@
 ul.nav li a {
-  background: #eee;
+  background: #44749d;
   border-color: #fff;
+  color: #ffffff;
 }
 ul.nav li a:hover {
-  background: #AEBD9D;
+  background: #bbccee;
   color: #eee;
 }
 #title {
-  background: #888;
-  color: #ddd;
+  background: #44749d;
 }
 #headings {
-  background: #CCD3C7;
+/* title & navbar */
+  background: #c6d4e1;
 }
 #container, #centered_rest, #rest {
-  background: #eee;
+  background: #ebe7e0;
 }
 h1 {
-  color: #99AF78;
+  color: #ffffff;
 }
 h2 {
-  color: #AEBD9D;
+  color: #ffffff;
 }
 p {
   color: #555;
 }
 a {
-  background: #ddd;
-  color: #999;
+  background: #c6d4e1;
+  color: #44749d;
 }
 a:hover {
-  background: #AEBD9D;
+  background: #bbccee;
   color: #fff;
 }
+
+/*
+http://1stwebdesigner.com/best-colors-for-websites/
+44749d Blue
+c6d4e1 Light blue
+ffffff White
+ebe7e0 Light grey
+bdb8ad Grey
+*/
